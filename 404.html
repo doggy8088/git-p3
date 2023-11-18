@@ -1,1 +1,7 @@
 <h1>Hello World</h1>
+
+<ul>
+  {% for repository in site.github.public_repositories %}
+  <li>{{ repository.name }} | { repository.html_url }}</li>
+{% endfor %}
+</ul>
